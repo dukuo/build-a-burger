@@ -1,0 +1,15 @@
+.InputControl {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.Label {
+    cursor: default;
+    margin: 0 0 10px 0;
+}
+
+.InputControl input {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}

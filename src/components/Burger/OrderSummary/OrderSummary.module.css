@@ -1,0 +1,84 @@
+.CheckoutButton {
+    outline: none;
+    border: 1px solid #123123;
+    border-radius: 5px;
+    background-color: #8a2be2;
+    color:white;
+    padding: 10px 20px;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+    transition: background-color ease-in-out .2s;
+    animation-play-state: paused; 
+    animation: hoverButton .3s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    text-decoration: none;
+    text-align: center;
+}
+
+.ModalTitle {
+    font-family: "Anton", "Open Sans", sans-serif;
+    text-align: center;
+}
+.SummaryDetailsText {
+    font-size: .9em;
+    color: #666;
+    text-align: center;
+    margin-top: 0;
+}
+
+.CheckoutButton:hover {
+    background-color: #a957f6;
+    animation-play-state: running;
+    border-color: rgb(247, 160, 255);
+}
+
+.CheckoutButton:active {
+    background-color: rgb(197, 7, 255);
+}
+
+.TotalPrice {
+    text-align: center;
+}
+
+.BackButton {
+    display: inline-block;
+    padding: 15px 20px;
+    min-width: 80px;
+    border: 1px solid #eee;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    margin: 0 40px;
+    cursor:pointer;
+    background-color: #fff;
+}
+.BackButton:hover {
+    background-color: #eee;
+}
+
+@keyframes hoverButton {
+    0% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@media (max-width: 500px) {
+    .ModalTitle {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 499px) {
+    .CheckoutButton {
+        border-radius: 0;
+        width: 100%;
+    }
+    .BackButton {
+        margin: 0
+    }
+}

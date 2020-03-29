@@ -1,0 +1,28 @@
+.BurgerPriceControl {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    white-space: nowrap;
+}
+
+.BurgerPriceControl h2 {
+    margin: 0;
+}
+
+.BurgerPriceControl span {
+    font-size: 1.4em;
+}
+
+@media (max-width: 499px) {
+    .BurgerPriceControl{
+        bottom: 40%;
+    }
+}

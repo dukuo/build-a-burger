@@ -1,0 +1,12 @@
+.Logo {
+    color: white;
+    font: "Anton", "Open Sans", sans-serif;
+    text-transform: uppercase;
+}
+
+.Logo a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+}

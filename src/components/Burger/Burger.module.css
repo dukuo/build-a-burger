@@ -1,0 +1,104 @@
+.Burger {
+    width: 100%;
+    margin: auto;
+    height: 250px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 400px;
+    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    /* animation: appear .3s cubic-bezier(0.445, 0.05, 0.55, 0.95); */
+    animation-play-state: paused;
+}
+
+@keyframes appear {
+    0% {
+        transform: translateX(-120vh);
+    }
+    60% {
+        width: 100px;
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes appearRight {
+    0% {
+        transform: translateX(100vh);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes dissappear {
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(100vh);
+    }
+}
+@keyframes easeOutBounce {
+	0% {
+		transform: translateX(-100vh);
+	}
+
+	12% {
+		transform: translateX(-98.46vh);
+	}
+
+	24% {
+		transform: translateX(-99.34vh);
+	}
+
+	36% {
+		transform: translateX(-93.75vh);
+	}
+
+	54% {
+		transform: translateX(-98.37vh);
+	}
+
+	74% {
+		transform: translateX(-75.02vh);
+	}
+
+	82% {
+		transform: translateX(-98.01vh);
+	}
+
+	92% {
+		transform: translateX(-43.56vh);
+	}
+
+	96% {
+		transform: translateX(-10.89vh);
+	}
+
+	100% {
+		transform: translateX(0vh);
+	}
+
+}
+
+
+@media (min-width: 500px) and (min-height: 400px) {
+    .Burger {
+        width: 350px;
+        height: 300px;
+    }
+}
+
+@media (min-width: 500px) and (min-height: 401px) {
+    .Burger {
+        width: 450px;
+        height: 400px;
+    }
+}
+
+@media (min-width: 1000px) and (min-height: 700px) {
+    .Burger {
+        width: 700px;
+        height: 600px;
+    }
+}

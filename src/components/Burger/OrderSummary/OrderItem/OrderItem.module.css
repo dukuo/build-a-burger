@@ -1,0 +1,15 @@
+.OrderListItem {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+    align-items: center;
+    border-bottom: solid 1px #eee;
+}
+
+.OrderListItem p {
+    text-transform: capitalize;
+}
+
+.OrderListItem span {
+    font-weight: bold;
+}

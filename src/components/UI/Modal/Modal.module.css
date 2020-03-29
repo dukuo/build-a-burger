@@ -1,0 +1,52 @@
+
+.Modal {
+    position: fixed;
+    z-index: 500;
+    background-color: rgb(249, 249, 249);
+    width: 70%;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px black;
+    padding: 16px;
+    left: 15%;
+    top: 30%;
+    box-sizing: border-box;
+    transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.CloseButton {
+    align-self: flex-end;
+}
+.CloseButton a{
+    font-weight: bold;
+    color: #777;
+    cursor: pointer;
+    font-size: .8em;
+}
+.CloseButton a:hover {
+    color: rgb(29, 0, 95);
+}
+
+.HideModal {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    .Modal {
+        width: 500px;
+        left: calc(50% - 250px);
+    }
+}
+
+@media (max-width: 500px) {
+    .Modal{
+        top: 10%;
+        width: 90%;
+        left: 5%;
+    }
+    .CloseButton {
+        align-self: center;
+    }
+}

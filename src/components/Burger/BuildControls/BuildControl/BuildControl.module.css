@@ -1,0 +1,79 @@
+.BuildControl {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: #eee;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 10px;
+    transition: all .3s  ease-in-out;
+    cursor: pointer;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+}
+.BuildControl:hover {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.ButtonHolder {
+    flex-flow: row;
+}
+
+.BuildControl button {
+    display: block;
+    padding: 5px;
+    width: 50px;
+    border: 1px solid rgb(40, 176, 255);
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    font-size: 2em;
+    margin: auto;
+}
+
+.BuildControl button:disabled {
+    background-color: rgb(168, 168, 168);
+    border: 1px solid rgb(175, 175, 175);
+    color: #ccc;
+    cursor: default;
+}
+
+.BuildControl button:hover:disabled {
+    background-color: rgb(131, 131, 131);
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.Label {
+    padding: 10px;
+    font-weight: bold;
+    width: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .2s all  cubic-bezier(0.68, -0.6, 0.32, 1.6);;
+}
+.BuildControl:hover .Label {
+    transform: scale(1.4)
+}
+
+.BuildControl .Less {
+    background-color: rgb(127, 188, 238);
+    color: white;
+}
+
+.BuildControl .More {
+    background-color: rgb(36, 138, 255);
+    color: white;
+}
+
+.BuildControl .More:active {
+    background-color: rgb(38, 105, 231);
+}
+
+.BuildControl .Less:active {
+    filter: brightness(90%)
+}
+.BuildControl .Less:hover, .BuildControl .More:hover {  
+    color: white;
+}
